@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --main-color : #383735;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration:none;
+}
+
+section{
+    margin-top: 200px;
+}
+
+.container {
+    max-width:1500px
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar .nav-wrapper { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    /*
+    height: 150px;
+    margin: 0 150px;
+    */
+}
+
+.nav-wrapper .logo{
+    position: relative;
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;  
+}
+
+
+.nav-wrapper .menu-wrapper .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+
+.menu-icon {
+    display:none;
+}
+
+.menu-wrapper .menu .menu-link{
+    position: relative;
+    display: block;
+    font-size: 1.125rem;
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.nav-wrapper .a:hover,
+.nav-wrapper .b:hover,
+.nav-wrapper .c:hover {
+    text-decoration: underline;
+    
+}
+
+
+/* .menu-wrapper .menu .menu-link.active{
+    font-weight: 700;
+    color: var(--second-color);
+}
+.menu-wrapper .btn-member{
+    font-family: var(--heading-font);
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--second-color);
+    padding: 25px 30px;
+    border-radius: 50px;
+} */
+
+
+/* Home-Sapaan Sri */
+.home{
+    margin: 260px 230px 150px 150px;
+}
+.home .home-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.home-wrapper .heading{
+    font-size: 22px;
+    font-weight: 300;
+    color:var(--main-color);
+}
+.home-wrapper .heading .nama{
+    font-size: 22px;
+    font-weight: 700;
+    color:var(--main-color);
+}
+.home-wrapper .subheading{
+    font-size: 22px;
+    font-weight: 300;
+    color:var(--main-color);
+    max-width: 700px;
+    margin: 25px 0;
+    line-height: 30px;
+}
+
+.subheading .pekerjaan {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Keterampilan */
+.keterampilan .keterampilan-wrapper {
+    margin: auto;
+    padding-top: 50px;
+}
+
+.judul-keterampilan_ .judul-keterampilan__ {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.keterampilan .jenis-keterampilan {
+    margin: 50px 150px;
+}
+
+.jenis-keterampilan .flex-row {
+    display: flex;
+}
+
+
+.jenis-keterampilan .jenis {
+    gap: 50px;
+    margin-bottom: 55px;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--main-color);
+    width: 33%;
+    text-align: center;
+}
+
+.lain-lain , .arrow {
+    color: var(--main-color);
+    border: none;
+}
+
+.lain-lain:hover,
+.lain-lain .arrow:hover {
+    font-weight: 700;
+}
+
+/* Studi Kasus */
+.studi-kasus {
+    margin: 110px 150px;
+    padding-top: 50px;
+}
+
+.studi-kasus .studikasus-wrapper {
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.studikasus-wrapper .judul-studiKasus__ {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.studikasus-wrapper .studikasus1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    margin: 50px auto;
+}
+
+.featured-image {
+    background-color: #FCF9F1;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+.proyek-lain {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+}
+
+.proyek-lain-wrapper {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.untuk-hover:hover {
+    background-color: var(--main-color);
+}
+
+/* Tentang Saya */
+.tentang-saya .tentangsaya-wrapper {
+    margin: 110px 150px;
+    padding-top: 50px;
+}
+
+
+.tentangsaya-wrapper .judul-tentangsaya_ {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+
+.tentangsaya-wrapper .deskripsi-tentangsaya {
+    margin: 50px auto;
+    display: flex;
+}
+
+.deskripsi-tentangsaya .deskripsi-tentangsaya_ {
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-right: 80px;
+}
+
+/* Mari Terhubung */
+.terhubung {
+    margin: 50px 300px;
+}
+
+.terhubung .terhubung-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 50px;
+}
+
+.terhubung-wrapper .mari-terhubung {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.terhubung-wrapper .linkedIn-terhubung {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.linkedIn-terhubung .logo-linkedin {
+    width: 40px;
+    cursor: pointer;
+    opacity: 35%;
+}
+
+.linkedIn-terhubung .logo-linkedin:hover {
+    opacity: 100%;
+}
+
+.linkedIn-terhubung .deskripsi-linkedIn {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.terhubung-wrapper .deskripsi-terhubung {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Formulir */
+.form {
+    margin: 50px 300px;
+}
+
+.form .form-wrapper {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.form-wrapper .input {
+    margin-top: 50px;
+}
+
+.form-wrapper .input .nama,
+.form-wrapper .input .email,
+.form-wrapper .input .pesan {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper textarea {
+    width: 100%;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"] {
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.form-wrapper textarea[placeholder="Tulis pesan, masukan, saran maupun kritikan Anda"] {
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button {
+    margin-top: 30px;
+    color: var(--main-color);
+    background-color: fade(--main-color, 35%);
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+
+/* Footer */
+footer {
+    background-color: #FCF9F1;
+}
+
+.footer-wrapper {
+    position: relative;
+    padding: 20px;
+    margin: auto 150px;
+}
+
+
+.footer-garis {
+    margin: 20px auto;
+}
+
+.medsos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medsos .footer-judul {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.yuk {
+    font-style: italic;
+}
+
+.medsos .logo-medsos {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.logo-medsos .isi-medsos {
+    cursor: pointer;
+    opacity: 35%;
+}
+
+.logo-medsos .isi-medsos:hover {
+    opacity: 100%;
+}
+
+
+.ukuran-logo {
+    width: 40px;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+
+    .featured-image {
+        background-color: #FCF9F1;
+        width: 200px;
+        height: 200px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Menu Navigasi */
+    .nav-wrapper .menu-wrapper .menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .menu-wrapper .menu .menu-link{
+        font-size: 14px;
+        color: var(--main-color);
+        font-weight: 300;
+    }
+
+    /* Sapaan Sri */
+    .home{
+        margin: 100px 150px;
+    }
+
+    .home-wrapper .heading{
+        font-size: 20px;
+        font-weight: 300;
+        color:var(--main-color);
+    }
+    .home-wrapper .heading .nama{
+        font-size: 20px;
+        font-weight: 700;
+        color:var(--main-color);
+    }
+    .home-wrapper .subheading{
+        font-size: 20px;
+        font-weight: 300;
+        color:var(--main-color);
+        max-width: 700px;
+        margin: auto 0;
+        line-height: 30px;
+    }
+
+    /* Keterampilan */
+    .keterampilan .keterampilan-wrapper {
+        position: relative;
+        margin: auto;
+        padding-top: 0;
+    }
+
+
+    .judul-keterampilan_ .judul-keterampilan__ {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+
+    .jenis-keterampilan .jenis {
+        margin: 25px 25px;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--main-color);
+        width: 33%;
+        text-align: center;
+    }
+
+    /* Studi kasus */
+    .studikasus-wrapper .judul-studiKasus__ {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+    
+    .studikasus-wrapper .studikasus1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .proyek-lain-wrapper {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+
+    /* Tentang Saya */
+    .tentangsaya-wrapper .judul-tentangsaya_ {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+    
+    .deskripsi-tentangsaya .deskripsi-tentangsaya_ {
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-right: 0;
+    }
+
+    .tentangsaya-wrapper .deskripsi-tentangsaya {
+        display: block;
+    }
+
+
+    .sri {
+        padding: 20px 0;
+        width: 250px;
+    }
+
+    /* Terhubung */
+    .terhubung {
+        margin: 50px 150px;
+    }
+
+    .terhubung-wrapper .mari-terhubung {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+
+    .linkedIn-terhubung .deskripsi-linkedIn {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    
+    .terhubung-wrapper .deskripsi-terhubung {
+        text-align: center;
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    /* Form */
+    .form {
+        margin: 50px 150px;
+    }
+    
+    .form-wrapper .input .nama,
+    .form-wrapper .input .email,
+    .form-wrapper .input .pesan {
+    font-size: 16px;
+    font-weight: 300;
+    }
+
+    .form-wrapper input[type="text"],
+    .form-wrapper input[type="email"] {
+        height: 10px;
+        font-family: 'Roboto', sans-serif;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .form-wrapper textarea[placeholder="Tulis pesan, masukan, saran maupun kritikan Anda"] {
+        font-family: 'Roboto', sans-serif;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    button {
+        margin-top: 30px;
+        color: var(--main-color);
+        background-color: fade(--main-color, 35%);
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 300;
+        cursor: pointer;
+        border: none;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        position: relative;
+        padding: 20px 0;
+        margin: auto 150px;
+    }
+
+    .medsos .footer-judul {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+}
+
+@media all and (max-width: 513px) {
+    .navbar .nav-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        margin: 0px 20px;
+    }
+
+    /* Sapaan Sri */
+    .home{
+        margin: 100px 20px;
+    }
+
+    .home-wrapper .heading{
+        font-size: 18px;
+    }
+    .home-wrapper .heading .nama{
+        font-size: 18px;
+    }
+    .home-wrapper .subheading{
+        font-size: 18px;
+    }
+
+    /* Keterampilan */
+    .judul-keterampilan_ .judul-keterampilan__ {
+        font-size: 18px;
+    }
+
+    .keterampilan .jenis-keterampilan {
+        margin: 50px 20px;
+    }
+    
+    .jenis-keterampilan .jenis {
+        font-size: 14px;
+    }
+
+    /* Studi kasus */
+    .studi-kasus {
+        margin: 50px 20px;
+    }
+    
+    .studikasus-wrapper .judul-studiKasus__ {
+        font-size: 18px;
+    }
+    
+    .studikasus-wrapper .studikasus1 {
+        margin: 20px auto;
+    }
+
+    .proyek-lain-wrapper {
+        font-size: 18px;
+    }
+
+    .proyek-lain {
+        gap: 20px;
+    }
+
+    /* Tentang Saya */
+    .tentang-saya .tentangsaya-wrapper {
+        margin: 50px 20px;
+    }
+    
+    .tentangsaya-wrapper .judul-tentangsaya_ {
+        font-size: 18px;
+    }
+    
+    .tentangsaya-wrapper .deskripsi-tentangsaya {
+        margin: 20px auto;
+    }
+
+    .deskripsi-tentangsaya .deskripsi-tentangsaya_ {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .tentangsaya-wrapper .deskripsi-tentangsaya {
+        display: block;
+    }
+    
+    .sri {
+        width: 150px;
+    }
+
+    /* Terhubung */
+    .terhubung {
+    margin: 50px 20px;
+    }
+
+    .terhubung-wrapper .mari-terhubung {
+        font-size: 18px;
+    }
+
+    .linkedIn-terhubung .deskripsi-linkedIn {
+        font-size: 12px;
+    }
+    
+    
+    .terhubung-wrapper .deskripsi-terhubung {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .terhubung .terhubung-wrapper {
+        gap: 20px;
+    }
+
+    .linkedIn-terhubung .logo-linkedin {
+        width: 25px;
+    }
+
+    /* Form */
+    .form {
+        margin: 50px 20px;
+    }
+    
+    .form-wrapper .input .nama,
+    .form-wrapper .input .email,
+    .form-wrapper .input .pesan {
+    font-size: 14px;
+    }
+
+    .form-wrapper input[type="text"],
+    .form-wrapper input[type="email"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form-wrapper textarea[placeholder="Tulis pesan, masukan, saran maupun kritikan Anda"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        position: relative;
+        padding: 20px 0;
+        margin: auto 20px;
+    }
+
+    .medsos .footer-judul {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .ukuran-logo {
+        width: 25px;
+    }
+
+
+}
