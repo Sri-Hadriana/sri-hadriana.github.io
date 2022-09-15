@@ -27,20 +27,44 @@ section{
     max-width:1500px
 }
 
-.navbar .nav-wrapper{
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar .nav-wrapper { 
     position: relative;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    margin: 0px 150px;
+    margin: 0 150px;
 }
+
 .nav-wrapper .logo{
-    position: fixed;
     font-size: 3.125rem;
     font-weight: 600;
     color: var(--main-color);   
+}
+
+main {
+    margin: auto 200px;
+}
+
+.CV-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    gap: 20px;
+}
+
+span {
+    font-style: italic;
 }
 
 
@@ -51,26 +75,12 @@ section{
       padding: 0;
     }
 
-    h1 {
-        margin: 0;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
     .navbar .nav-wrapper,
     main { 
         margin: 0 100px;
-    }
-
-    .video-tutor {
-        height: 300px;
-    }
-
-    .quote {
-        font-size: 22px;
-        line-height: 35px;
-        margin: 50px 50px;
     }
 
 }
@@ -80,30 +90,5 @@ section{
     main { 
         margin: 0 20px;
     }
-
-    h1 {
-        font-size: 24px;
-        line-height: 34px;
-    }
-    
-    h2 {
-        font-size: 18px;
-    }
-    
-    h3 {
-        font-size: 16px;
-    }
-
-    .deskripsi {
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .quote {
-        font-size: 20px;
-        line-height: 35px;
-        margin: 50px 50px;
-    }
-    
 
 }
