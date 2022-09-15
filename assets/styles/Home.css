@@ -157,6 +157,7 @@ h1 {
 
 .jenis-keterampilan .flex-row {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -535,6 +536,11 @@ footer {
         width: 33%;
         text-align: center;
     }
+
+    .jenis-keterampilan .flex-row {
+        display: flex;
+        justify-content: center;
+    }
     
 
     /* Studi kasus */
@@ -677,8 +683,11 @@ footer {
     }
     
     .nav-wrapper .menu-wrapper .menu{
-        gap: 20px;
-        
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     /* Sapaan Sri */
@@ -688,7 +697,7 @@ footer {
     }
     
     .home .home-wrapper{
-        margin: 160px 20px;
+        margin: 100px 20px;
         max-width: 1500px;
     }
 
@@ -703,6 +712,10 @@ footer {
     }
 
     /* Keterampilan */
+    .keterampilan {
+        margin: 50px 20px;
+    }
+    
     .keterampilan .keterampilan-wrapper {
         padding-top: 0;
         margin-top: 0;
@@ -714,6 +727,11 @@ footer {
 
     .keterampilan .jenis-keterampilan {
         margin: 20px 20px;
+    }
+
+    .jenis-keterampilan .flex-row {
+        display: flex;
+        justify-content: center;
     }
     
     .jenis-keterampilan .jenis {
