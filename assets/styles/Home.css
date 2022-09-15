@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
+    overflow-x: hidden;
 }
 
 * {
@@ -64,10 +65,59 @@ section{
     
 }
 
+/* menu toogle */
 
-.menu-icon {
-    display:none;
+.icon {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
 }
+
+.icon input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.icon span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Navigasi Toogle */
+.icon span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.icon span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.icon input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.icon input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.icon input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+
+
 
 .menu-wrapper .menu .menu-link{
     position: relative;
@@ -677,18 +727,39 @@ footer {
 @media all and (max-width: 513px) {
     .navbar .nav-wrapper { 
         display: flex;
-        flex-direction: column;
-        align-items:flex-start;
+        align-items:center;
         padding: 40px 20px;
     }
     
-    .nav-wrapper .menu-wrapper .menu{
-        display: none;
+    .nav-wrapper .menu-wrapper .menu {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        height: 100vh;
+        justify-content:start;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: white;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
     }
 
-    .menu-icon {
+    .nav-wrapper .menu-wrapper .menu.slide {
+        transform: translateX(0);
+    }
+
+    .menu .menu-item {
+        margin: 10px 20px;
+    }
+
+    
+    .icon {
         display: flex;
     }
+
 
     /* Sapaan Sri */
     .home{
