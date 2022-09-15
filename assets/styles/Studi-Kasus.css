@@ -54,7 +54,7 @@ section{
 }
 
 main {
-    margin: auto 200px;
+    margin: 200px 200px;
 }
 
 .disclaimer {
@@ -191,10 +191,6 @@ footer {
 }
 
 
-
-
-
-
 @media screen and (max-width: 1000px) {
     #content,
     aside {
@@ -214,9 +210,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper { 
         margin: 0 100px;
+    }
+
+    main {
+        margin: 150px 20px;
     }
 
     .video-tutor {
@@ -235,10 +234,14 @@ footer {
 }
 
 @media screen and (max-width: 513px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper { 
         margin: 0 20px;
     }
+
+    main {
+        margin: 150px 20px;
+    }
+
 
     h1 {
         font-size: 24px;
@@ -265,4 +268,3 @@ footer {
     }
 
 }
-
