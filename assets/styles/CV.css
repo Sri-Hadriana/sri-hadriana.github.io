@@ -35,6 +35,14 @@ section{
     background-color: white;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
 .navbar .nav-wrapper { 
     position: relative;
     display: flex;
@@ -51,7 +59,7 @@ section{
 }
 
 main {
-    margin: auto 200px;
+    margin: 200px 200px;
 }
 
 .CV-wrapper {
@@ -78,17 +86,23 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper{ 
         margin: 0 100px;
+    }
+
+    main {
+        margin: 150px 20px;
     }
 
 }
 
 @media screen and (max-width: 513px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper{ 
         margin: 0 20px;
+    }
+
+    main {
+        margin: 150px 20px;
     }
 
 }
