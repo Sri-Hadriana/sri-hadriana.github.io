@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
 }
 
 * {
@@ -18,7 +19,8 @@ body {
 }
 
 section{
-    margin-top: 200px;
+    margin-top: 100px;
+    
 }
 
 .container {
@@ -75,6 +77,10 @@ section{
     font-weight: 300;
 }
 
+.b {
+    font-style: italic;
+}
+
 .nav-wrapper .a:hover,
 .nav-wrapper .b:hover,
 .nav-wrapper .c:hover {
@@ -96,32 +102,31 @@ section{
     border-radius: 50px;
 } */
 
+h1 {
+    font-size: 22px;
+}
 
 /* Home-Sapaan Sri */
 .home{
-    margin: 260px 230px 150px 150px;
-}
-.home .home-wrapper{
-    display: flex;
+    display:flex;
     justify-content: center;
+    text-align: left;
+    
 }
-.home-wrapper .heading{
-    font-size: 22px;
+
+.home .home-wrapper{
+    margin: 200px 160px 150px 150px;
+    max-width: 800px;
+}
+
+.home-wrapper .heading,
+.home-wrapper .subheading{
     font-weight: 300;
-    color:var(--main-color);
+    line-height: 30px;
+    
 }
 .home-wrapper .heading .nama{
-    font-size: 22px;
     font-weight: 700;
-    color:var(--main-color);
-}
-.home-wrapper .subheading{
-    font-size: 22px;
-    font-weight: 300;
-    color:var(--main-color);
-    max-width: 700px;
-    margin: 25px 0;
-    line-height: 30px;
 }
 
 .subheading .pekerjaan {
@@ -129,19 +134,21 @@ section{
     font-weight: 400;
 }
 
+
+
 /* Keterampilan */
+
 .keterampilan .keterampilan-wrapper {
-    margin: auto;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .judul-keterampilan_ .judul-keterampilan__ {
     justify-content: center;
-    align-items: center;
+    text-align: center;
     display: flex;
-    font-size: 22px;
     font-weight: 700;
     color: var(--main-color);
+
 }
 
 .keterampilan .jenis-keterampilan {
@@ -173,10 +180,13 @@ section{
     font-weight: 700;
 }
 
+
+
 /* Studi Kasus */
+
 .studi-kasus {
     margin: 110px 150px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .studi-kasus .studikasus-wrapper {
@@ -186,7 +196,6 @@ section{
 }
 
 .studikasus-wrapper .judul-studiKasus__ {
-    font-size: 22px;
     font-weight: 700;
     color: var(--main-color);
 }
@@ -211,6 +220,7 @@ section{
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 100%;
     align-items: center;
     margin: auto;
@@ -227,6 +237,7 @@ section{
     background-color: var(--main-color);
 }
 
+
 /* Tentang Saya */
 .tentang-saya .tentangsaya-wrapper {
     margin: 110px 150px;
@@ -235,7 +246,6 @@ section{
 
 
 .tentangsaya-wrapper .judul-tentangsaya_ {
-    font-size: 22px;
     font-weight: 700;
     color: var(--main-color);
 }
@@ -252,6 +262,7 @@ section{
     font-weight: 300;
     margin-right: 80px;
 }
+
 
 /* Mari Terhubung */
 .terhubung {
@@ -281,7 +292,6 @@ section{
 
 .linkedIn-terhubung .logo-linkedin {
     width: 40px;
-    cursor: pointer;
     opacity: 35%;
 }
 
@@ -294,6 +304,10 @@ section{
     font-weight: 300;
 }
 
+.sri {
+    width: 200px;
+}
+
 
 .terhubung-wrapper .deskripsi-terhubung {
     text-align: center;
@@ -301,6 +315,7 @@ section{
     font-size: 20px;
     font-weight: 300;
 }
+
 
 /* Formulir */
 .form {
@@ -364,13 +379,16 @@ button:hover {
 }
 
 
+
+
 /* Footer */
+
 footer {
     background-color: #FCF9F1;
 }
 
 .footer-wrapper {
-    position: relative;
+    
     padding: 20px;
     margin: auto 150px;
 }
@@ -418,12 +436,22 @@ footer {
 
 
 
+
 /* Responsive */
+ 
 @media screen and (max-width: 1000px) {
     #content,
     aside {
       width: 100%;
       padding: 0;
+    }
+
+    .home .home-wrapper{
+        margin: 200px 100px 150px 150px;
+    }
+
+    .keterampilan .keterampilan-wrapper {
+        padding-top: 10px;
     }
 
     .featured-image {
@@ -432,11 +460,17 @@ footer {
         height: 200px;
         padding: 30px;
     }
+
+    .deskripsi-tentangsaya .deskripsi-tentangsaya_ {
+        font-size: 20px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     
     /* Menu Navigasi */
+    
     .nav-wrapper .menu-wrapper .menu{
         display: flex;
         align-items: center;
@@ -448,10 +482,12 @@ footer {
         color: var(--main-color);
         font-weight: 300;
     }
+    
 
     /* Sapaan Sri */
+    
     .home{
-        margin: 100px 150px;
+        margin: 100px auto;
     }
 
     .home-wrapper .heading{
@@ -468,14 +504,15 @@ footer {
         font-size: 20px;
         font-weight: 300;
         color:var(--main-color);
-        max-width: 700px;
+        max-width: 1500px;
         margin: auto 0;
         line-height: 30px;
     }
+    
 
     /* Keterampilan */
+    
     .keterampilan .keterampilan-wrapper {
-        position: relative;
         margin: auto;
         padding-top: 0;
     }
@@ -498,8 +535,10 @@ footer {
         width: 33%;
         text-align: center;
     }
+    
 
     /* Studi kasus */
+    
     .studikasus-wrapper .judul-studiKasus__ {
         font-size: 20px;
         font-weight: 700;
@@ -519,8 +558,10 @@ footer {
         font-weight: 700;
         color: var(--main-color);
     }
+    
 
     /* Tentang Saya */
+    
     .tentangsaya-wrapper .judul-tentangsaya_ {
         font-size: 20px;
         font-weight: 700;
@@ -535,16 +576,18 @@ footer {
     }
 
     .tentangsaya-wrapper .deskripsi-tentangsaya {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
     }
-
 
     .sri {
         padding: 20px 0;
-        width: 250px;
+        width: 150px;
     }
+    
 
     /* Terhubung */
+    
     .terhubung {
         margin: 50px 150px;
     }
@@ -567,8 +610,10 @@ footer {
         font-size: 16px;
         font-weight: 300;
     }
+    
 
     /* Form */
+    
     .form {
         margin: 50px 150px;
     }
@@ -606,10 +651,11 @@ footer {
         cursor: pointer;
         border: none;
     }
+    
 
     /* Footer */
+    
     .footer-wrapper {
-        position: relative;
         padding: 20px 0;
         margin: auto 150px;
     }
@@ -618,22 +664,32 @@ footer {
         font-size: 16px;
         font-weight: 300;
     }
+    
 
 }
 
 @media all and (max-width: 513px) {
-    .navbar .nav-wrapper{
-        position: relative;
+    .navbar .nav-wrapper { 
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-        margin: 0px 20px;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 40px 20px;
+    }
+    
+    .nav-wrapper .menu-wrapper .menu{
+        gap: 20px;
+        
     }
 
     /* Sapaan Sri */
     .home{
-        margin: 100px 20px;
+        display:flex;
+        justify-content: center;
+    }
+    
+    .home .home-wrapper{
+        margin: 160px 20px;
+        max-width: 1500px;
     }
 
     .home-wrapper .heading{
@@ -647,12 +703,17 @@ footer {
     }
 
     /* Keterampilan */
+    .keterampilan .keterampilan-wrapper {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
     .judul-keterampilan_ .judul-keterampilan__ {
         font-size: 18px;
     }
 
     .keterampilan .jenis-keterampilan {
-        margin: 50px 20px;
+        margin: 20px 20px;
     }
     
     .jenis-keterampilan .jenis {
@@ -693,13 +754,14 @@ footer {
         margin: 20px auto;
     }
 
+    .deskripsi-tentangsaya {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .deskripsi-tentangsaya .deskripsi-tentangsaya_ {
         font-size: 16px;
         line-height: 26px;
-    }
-
-    .tentangsaya-wrapper .deskripsi-tentangsaya {
-        display: block;
     }
     
     .sri {
@@ -776,6 +838,5 @@ footer {
     .ukuran-logo {
         width: 25px;
     }
-
-
 }
+
