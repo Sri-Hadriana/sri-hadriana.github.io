@@ -49,8 +49,7 @@ section{
 
 
 main {
-    margin: auto 150px;
-    
+    margin: 200px 200px;
 }
 
 h1 {
@@ -99,9 +98,12 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper{ 
         margin: 0 100px;
+    }
+
+    main {
+        margin: 150px 20px;
     }
 
     .video-tutor {
@@ -117,9 +119,12 @@ p{
 }
 
 @media screen and (max-width: 513px) {
-    .navbar .nav-wrapper,
-    main { 
+    .navbar .nav-wrapper{ 
         margin: 0 20px;
+    }
+
+    main {
+        margin: 150px 20px;
     }
 
     h1 {
